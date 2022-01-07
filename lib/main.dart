@@ -1,11 +1,12 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/home_page.dart';
 import 'package:flutter_catalog/pages/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
-  // var c1 = const MyApp();
-  // print(c1.bringVegetables(thaila: true));
 }
 
 class MyApp extends StatelessWidget {
@@ -13,23 +14,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //context is a peice of info that which is where(location of widget)
-    double pi = 3.14;
-    bool isMale = true;
-    num temp = 30.5;
-    var forAnyVaariable = "tuesday";
-    const pie = 3.14;
-    final pies = 3.14;
-    // print(bringVegetables(thaila: false));
     return MaterialApp(
-      // home: HomePage(),
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
+        fontFamily: GoogleFonts.lato().fontFamily,
       ),
       darkTheme: ThemeData(
         brightness: Brightness.light,
-        // primarySwatch: Colors.blueGrey,
       ),
       initialRoute: "/home",
       routes: {
@@ -39,8 +31,4 @@ class MyApp extends StatelessWidget {
       },
     );
   }
-
-  // bringVegetables({required bool thaila, int rupees = 100}) {
-  //   return rupees;
-  // }
 }
