@@ -1,5 +1,19 @@
+class CatalogModel {
+  static final items = [
+    Item(
+      id: 1,
+      name: "iPhone 12 Pro",
+      desc: "Apple Iphone mobile",
+      price: 999,
+      color: "#33505a",
+      image:
+          "https://www.nttdocomo.co.jp/flcache_data/english/iphone/images/12-pro/img_main_smt.png",
+    )
+  ];
+}
+
 class Item {
-  final String id;
+  final int id;
   final String? name;
   final String? desc;
   final num? price;
@@ -14,15 +28,3 @@ class Item {
       this.color,
       this.image});
 }
-
-final products = [
-  Item(
-    id: "auto001",
-    name: "iPhone 12 Pro",
-    desc: "Apple Iphone mobile",
-    price: 999,
-    color: "#33505a",
-    image:
-        "https://www.nttdocomo.co.jp/flcache_data/english/iphone/images/12-pro/img_main_smt.png",
-  )
-];
